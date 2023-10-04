@@ -5,12 +5,20 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 139, 126, 223;
+  --header-height: 70px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background--rgb: 139, 126, 223;
+  }
+}
+
+
+@media (min-width: 640px) {
+  :root {
+    --header-height: 104px;
   }
 }
 
@@ -21,28 +29,51 @@ body {
 }
 
 .header {
-  height: 104px;
+  height: var(--header-height);
 }
 
 .menu {
-  font-size: 20px;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    font-size: 20px;
+  }
 }
 
 .main-text {
-  font-size: 80px;
+  font-size: 40px;
   line-height: 1.22;
-  width: 891px;
-  padding-top: 223px;
+  padding-top: 50px;
 }
 
-.main-text::before {
-  position: absolute;
-  top: 8px;
-  left: 0;
-  background-image: url('/figure.png');
-  content: '';
-  width: 108px;
-  height: 170px;
+@media (min-width: 1024px) {
+  .main-text {
+    font-size: 55px;
+    width: 700px;
+    padding-top: 223px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-text {
+    font-size: 80px;
+    width: 891px;
+    padding-top: 223px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-text::before {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    background-image: url('/figure.png');
+    content: '';
+    width: 108px;
+    height: 170px;
+  }
 }
 
 .install-btn {
@@ -50,7 +81,14 @@ body {
 }
 
 .main-text-bottom {
-  margin-bottom: 88px;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1280px) {
+  .main-text-bottom {
+    margin-bottom: 88px;
+  }
 }
 
 .left {
@@ -58,17 +96,35 @@ body {
 }
 
 .main-screen {
-  min-height: calc(100vh - 104px);
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1280px) {
+  .main-screen {
+    min-height: calc(100vh - 104px);
+    margin-bottom: 60px;
+  }
 }
 
 .main-img {
-  margin-top: 103px;
+  margin-top: 63px;
+}
+
+@media (min-width: 1280px) {
+  .main-img {
+    margin-top: 103px;
+  }
 }
 
 .title {
-  font-size: 40px;
+  font-size: 32px;
   margin-bottom: 86px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
 }
 
 .title-1 {
@@ -98,20 +154,44 @@ body {
   content: '';
 }
 
-
 .footer {
-  font-size: 20px;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    font-size: 20px;
+  }
 }
 
 p {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 160%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: white;
 }
 
+@media (min-width: 768px) {
+  p {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+}
+
 article {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  article {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer img {
+    width: 150px;
+  }
 }
 
 .list {
@@ -119,8 +199,15 @@ article {
 }
 
 .list li {
-  font-size: 22px;
-  margin-bottom: 30px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .list li {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
 }
 
 .max-width-858 {

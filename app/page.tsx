@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import { BellIcon, ClockIcon, LightBulbIcon, GlobeAltIcon, BoltIcon } from '@heroicons/react/24/solid'
+import Menu from './menu';
 
 export default function Home() {
   const year = (new Date()).getFullYear();
+
   return (
-    <main className="flex flex-col items-center justify-between">
-      <div className="header max-w-screen-xl w-full items-center justify-between lg:flex">
+    <main className="flex flex-col items-center justify-between px-4">
+      <div className="header max-w-screen-xl w-full items-center justify-between flex">
         <a href="/">
           <Image
             src="/logo.png"
@@ -16,26 +18,16 @@ export default function Home() {
             priority
           />
         </a>
-        <ul className="flex text-white menu font-light">
-          <li className="mr-7">
-            <a className="hover:underline underline-offset-4 decoration-1" href="#about">О расширении</a>
-          </li>
-          <li className="mr-7">
-            <a className="hover:underline underline-offset-4 decoration-1" href="#benefits">Преимущества</a>
-          </li>
-          <li>
-            <a href="#" className="text-lg font-bold py-3 px-7 border border-white rounded-xl hover:bg-slate-50/5 active:bg-slate-50/10">Установить</a>
-          </li>
-        </ul>
+        <Menu />
       </div>
-      <div className="max-w-screen-xl mb-20">
-        <div className="main-screen flex">
+      <div className="max-w-screen-xl mb:10 md:mb-20">
+        <div className="main-screen flex flex-col md:flex-row">
           <div className="left">
-            <div className="main-text text-white relative mb-8">Topic Meister - ваш ключ к эффективному обучению!</div>
-            <div className="main-text-bottom text-white text-2xl">Расширение доступно для браузеров Chrome и Edge.</div>
+            <div className="main-text text-white relative mb-4 md:mb-8">Topic Meister - ваш ключ к эффективному обучению!</div>
+            <div className="main-text-bottom text-white lg:text-2xl">Расширение доступно для браузеров Chrome и Edge.</div>
             <a href="#" className="install-btn text-lg font-bold py-4 px-9 inline-block bg-white rounded-xl hover:bg-slate-50 active:bg-slate-100">Установить</a>
           </div>
-          <div>
+          <div className="hidden md:block">
             <Image
               src="/owl.png"
               className="main-img"
@@ -56,19 +48,19 @@ export default function Home() {
           <div className="title-1 relative font-bold" id="benefits">Преимущества</div>
           <ul className="list text-white">
             <li>
-                <span className="font-bold inline-flex"><BellIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> Организация знаний:</span> Создавайте топики и структурируйте концепции для более эффективного обучения.
+                <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><BellIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> Организация знаний:</span> <span>Создавайте топики и структурируйте концепции для более эффективного обучения.</span>
             </li>
             <li>
-                <span className="font-bold inline-flex"><ClockIcon className="relative top-1 h-6 w-6 6 mr-1" aria-hidden="true" /> Гибкое расписание:</span> Установите интервалы появления концепций по таймеру, чтобы оптимизировать запоминание.
+                <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><ClockIcon className="relative top-1 h-6 w-6 6 mr-1" aria-hidden="true" /> Гибкое расписание:</span> Установите интервалы появления концепций по таймеру, чтобы оптимизировать запоминание.
             </li>
             <li>
-                <span className="font-bold inline-flex"><LightBulbIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> Интеграция в браузер:</span> Попап-окна с концепциями появляются непосредственно на страницах, которые вы просматриваете.
+                <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><LightBulbIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> Интеграция в браузер:</span> Попап-окна с концепциями появляются непосредственно на страницах, которые вы просматриваете.
             </li>
             <li>
-                <span className="font-bold inline-flex"><GlobeAltIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> Универсальность:</span> Применяйте расширение для изучения любой темы или предмета.
+                <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><GlobeAltIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> Универсальность:</span> Применяйте расширение для изучения любой темы или предмета.
             </li>
             <li>
-                <span className="font-bold inline-flex"><BoltIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> Максимальная концентрация:</span> Избавьтесь от отвлекающих факторов и фокусируйтесь на существенных понятиях.
+                <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><BoltIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> Максимальная концентрация:</span> Избавьтесь от отвлекающих факторов и фокусируйтесь на существенных понятиях.
             </li>
           </ul>
           <p className="max-width-858">Не ограничивайте свой потенциал - станьте мастером в обучении с помощью "Topic Meister"! Улучшите свои навыки запоминания и усвоения информации, повысьте эффективность своего учебного процесса и достигните новых высот в своих академических или профессиональных целях.</p>
@@ -76,7 +68,7 @@ export default function Home() {
           <a href="#" className="install-btn text-lg font-bold py-4 px-9 inline-block bg-white rounded-xl hover:bg-slate-50 active:bg-slate-100">Установить</a>
         </article>
       </div>
-      <footer className="footer flex justify-center items-center max-w-screen-xl w-full border-t border-white pt-10 pb-14">
+      <footer className="footer flex justify-center items-center max-w-screen-xl w-full border-t border-white py-4 md:py-10">
         <Image
           src="/logo-bot.png"
           alt="logo-bot"
