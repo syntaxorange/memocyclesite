@@ -1,5 +1,4 @@
 import Image from 'next/image'
-// import { I18n } from "i18n-js"
 import { BellIcon, ClockIcon, LightBulbIcon, GlobeAltIcon, BoltIcon } from '@heroicons/react/24/solid'
 import Menu from './menu'
 import { Locale } from './dictionaries'
