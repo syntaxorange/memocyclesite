@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 
-export default function Menu() {
+export default function Menu({ menuLinks }: any) {
   const [isVisible, setIsVisible] = useState(false);
   
   function handleClick() {
@@ -14,13 +14,13 @@ export default function Menu() {
     <>
       <ul className="text-white menu font-light hidden sm:flex">
         <li className="mr-4 md:mr-7">
-          <a className="hover:underline underline-offset-4 decoration-1" href="#about">О расширении</a>
+          <a className="hover:underline underline-offset-4 decoration-1" href="#about">{menuLinks.about}</a>
         </li>
         <li className="mr-4 md:mr-7">
-          <a className="hover:underline underline-offset-4 decoration-1" href="#benefits">Преимущества</a>
+          <a className="hover:underline underline-offset-4 decoration-1" href="#benefits">{menuLinks.benefits}</a>
         </li>
         <li>
-          <a href="#" className="text-base md:text-lg font-bold py-3 px-7 border border-white rounded-xl hover:bg-slate-50/5 active:bg-slate-50/10">Установить</a>
+          <a href="#" className="text-base md:text-lg font-bold py-3 px-7 border border-white rounded-xl hover:bg-slate-50/5 active:bg-slate-50/10">{menuLinks.install}</a>
         </li>
       </ul>
       <div className={`${isVisible ? '' : 'hidden'} fixed inset-0 z-50 overflow-hidden sm:hidden`}>
@@ -39,13 +39,13 @@ export default function Menu() {
           </div>
           <ul className="font-bold px-7 py-4 border-b">
             <li className="mb-4">
-              <a className="block py-2" href="#about">О расширении</a>
+              <a className="block py-2" href="#about">{menuLinks.about}</a>
             </li>
             <li className="mb-4">
-              <a className="block py-2" href="#benefits">Преимущества</a>
+              <a className="block py-2" href="#benefits">{menuLinks.benefits}</a>
             </li>
             <li className="mb-4">
-              <a className="block py-2" href="#">Установить</a>
+              <a className="block py-2" href="#">{menuLinks.install}</a>
             </li>
           </ul>
         </div>

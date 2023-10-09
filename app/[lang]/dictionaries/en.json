@@ -1,0 +1,39 @@
+{
+  "menu": {
+    "about": "About the extension",
+    "benefits": "Benefits",
+    "install": "Install"
+  },
+  "main_text": "Topic Meister - Your Key to Effective Learning!",
+  "main_text_bottom": "The extension is available for Chrome and Edge browsers.",
+  "about": {
+    "multiple_tabs": "Are you tired of juggling multiple open tabs, endless scrolling, and losing focus while studying new topics? \"Topic Meister\" is an innovative browser extension that will make your learning process more engaging, organized, and productive!",
+    "truly_stick": "Often, we fill our memory with information that quickly fades away. <span class=\"underline underline-offset-4\">But with \"Topic Meister,\" every new subject you study will truly stick!</span> Create your own topics and populate them with concepts you want to master, whether they're key textbook terms, new vocabulary, or essential facts.",
+    "grabs_attention": "\"Topic Meister\" offers functionality that seamlessly integrates concepts into your browsing experience. By setting a timer, you can establish intervals for popup windows displaying concepts directly on the pages you're viewing. Instead of getting distracted by switching between tabs or searching for additional information, \"Topic Meister\" grabs your attention with crucial concepts right where you are!",
+    "improve_retention": "Use \"Topic Meister\" for any subject or field of knowledge. Whether it's study materials, foreign languages, professional development, or simply satisfying your curiosity, our extension will help you deepen your understanding and improve information retention."
+  },
+  "benefits": {
+    "organization": {
+      "title": "Knowledge Organization:",
+      "text": "Create topics and structure concepts for more efficient learning."
+    },
+    "schedule": {
+      "title": "Flexible Schedule:",
+      "text": "Set concept appearance intervals via a timer to optimize retention."
+    },
+    "integration": {
+      "title": "Browser Integration:",
+      "text": "Popup windows with concepts appear directly on the pages you're browsing."
+    },
+    "universality": {
+      "title": "Universality",
+      "text": "Apply the extension to learn about any topic or subject."
+    },
+    "focus": {
+      "title": "Maximum Focus:",
+      "text": "Eliminate distractions and concentrate on essential concepts."
+    },
+    "learning_master": "Don't limit your potential - become a learning master with \"Topic Meister\"! Enhance your memorization and comprehension skills, increase the efficiency of your learning process, and reach new heights in your academic or professional pursuits.",
+    "install": "Install \"Topic Meister\" now and unlock<br /> new horizons in learning!"
+  }
+}
