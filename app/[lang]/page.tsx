@@ -59,23 +59,28 @@ export default async function Home({ params: { lang } }: Props) {
         </article>
         <article>
           <div className="title-1 relative font-bold" id="benefits">{dict.menu.benefits}</div>
-          <ul className="list text-white">
-            <li>
-              <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><BellIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> {dict.benefits.organization.title}</span> <span>{dict.benefits.organization.text}</span>
-            </li>
-            <li>
-              <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><ClockIcon className="relative top-1 h-6 w-6 6 mr-1" aria-hidden="true" /> {dict.benefits.schedule.title}</span> {dict.benefits.schedule.text}
-            </li>
-            <li>
-              <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><LightBulbIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> {dict.benefits.integration.title}</span> {dict.benefits.integration.text}
-            </li>
-            <li>
-              <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><GlobeAltIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> {dict.benefits.universality.title}</span> {dict.benefits.universality.text}
-            </li>
-            <li>
-              <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><BoltIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> {dict.benefits.focus.title}</span> {dict.benefits.focus.text}
-            </li>
-          </ul>
+          <div className="flex flex-col lg:flex-row">
+            <ul className="list text-white w-full lg:pr-7 lg:w-2/4">
+              <li>
+                <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><BellIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> {dict.benefits.organization.title}</span> <span>{dict.benefits.organization.text}</span>
+              </li>
+              <li>
+                <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><ClockIcon className="relative top-1 h-6 w-6 6 mr-1" aria-hidden="true" /> {dict.benefits.schedule.title}</span> {dict.benefits.schedule.text}
+              </li>
+              <li>
+                <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><LightBulbIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> {dict.benefits.integration.title}</span> {dict.benefits.integration.text}
+              </li>
+              <li>
+                <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><GlobeAltIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> {dict.benefits.universality.title}</span> {dict.benefits.universality.text}
+              </li>
+              <li>
+                <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><BoltIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> {dict.benefits.focus.title}</span> {dict.benefits.focus.text}
+              </li>
+            </ul>
+            <div className="mb-8 w-full lg:w-2/4">
+              <iframe width="100%" height="360" src="https://www.youtube.com/embed/r0HUoRCAVic?si=nGM1QIrcVHm_2EoK" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            </div>
+          </div>
           <p className="max-width-858">{dict.benefits.learning_master}</p>
           <p className="font-bold mb-10" dangerouslySetInnerHTML={{__html: dict.benefits.install}}></p>
           <a href="#" className="install-btn text-lg font-bold py-4 px-9 inline-block bg-white rounded-xl hover:bg-slate-50 active:bg-slate-100">{dict.menu.install}</a>
