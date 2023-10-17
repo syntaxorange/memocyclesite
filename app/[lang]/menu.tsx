@@ -24,7 +24,7 @@ export default function Menu({ menuLinks }: any) {
         </li>
       </ul>
       <div className={`${isVisible ? '' : 'hidden'} fixed inset-0 z-50 overflow-hidden sm:hidden`}>
-        <div className="absolute backdrop-blur bg-slate-900/25 inset-0"></div>
+        <div className="absolute backdrop-blur bg-slate-900/25 inset-0" onClick={handleClick}></div>
         <div className="mobile-menu fixed h-full bg-white z-10 w-80 top-0 right-0">
           <div className="mobile-menu-header py-5 pl-5 pr-4 flex justify-between border-b">
             <a href="/">
