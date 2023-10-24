@@ -78,7 +78,7 @@ export default async function Home({ params: { lang } }: Props) {
               </li>
             </ul>
             <div className="mb-8 w-full lg:w-2/4">
-              <iframe width="100%" height="360" src="https://www.youtube.com/embed/r0HUoRCAVic?si=nGM1QIrcVHm_2EoK" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+              <iframe width="100%" height="360" src="https://www.youtube.com/embed/Lr-6NxNAQQc?si=__T4nCw5U9KpT6Ya" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
           </div>
           <p className="max-width-858">{dict.benefits.learning_master}</p>
