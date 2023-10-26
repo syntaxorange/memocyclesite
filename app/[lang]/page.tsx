@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { BellIcon, ClockIcon, LightBulbIcon, GlobeAltIcon, BoltIcon } from '@heroicons/react/24/solid'
+import { BellIcon, ClockIcon, LightBulbIcon, GlobeAltIcon, BoltIcon, Cog6ToothIcon } from '@heroicons/react/24/solid'
 import Menu from './menu'
 import { Locale } from './dictionaries'
 import { getDictionary } from './dictionaries'
@@ -75,6 +75,9 @@ export default async function Home({ params: { lang } }: Props) {
               </li>
               <li>
                 <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><BoltIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> {dict.benefits.focus.title}</span> {dict.benefits.focus.text}
+              </li>
+              <li>
+                <span className="font-bold flex md:inline-flex mb-1 md:mb-0"><Cog6ToothIcon className="relative top-1 h-6 w-6 mr-1" aria-hidden="true" /> {dict.benefits.functionality.title}</span> {dict.benefits.functionality.text}
               </li>
             </ul>
             <div className="mb-8 w-full lg:w-2/4">

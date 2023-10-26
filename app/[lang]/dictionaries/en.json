@@ -33,6 +33,10 @@
       "title": "Maximum Focus:",
       "text": "Eliminate distractions and concentrate on essential concepts."
     },
+    "functionality": {
+      "title": "Functionality:",
+      "text": "Use Markdown for flexible concept creation and editing, and easily manage your data with import/export in CSV format."
+    },
     "learning_master": "Don't limit your potential - become a learning master with \"Topic Meister\"! Enhance your memorization and comprehension skills, increase the efficiency of your learning process, and reach new heights in your academic or professional pursuits.",
     "install": "Install \"Topic Meister\" now and unlock<br /> new horizons in learning!"
   }
