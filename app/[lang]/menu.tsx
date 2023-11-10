@@ -20,7 +20,7 @@ export default function Menu({ menuLinks }: any) {
           <a className="hover:underline underline-offset-4 decoration-1" href="#benefits">{menuLinks.benefits}</a>
         </li>
         <li>
-          <a href="#" className="text-base md:text-lg font-bold py-3 px-7 border border-white rounded-xl hover:bg-slate-50/5 active:bg-slate-50/10">{menuLinks.install}</a>
+          <a href="https://chromewebstore.google.com/detail/topic-meister/igcookmgmogijokbhikdoggmkidbnhnk" className="text-base md:text-lg font-bold py-3 px-7 border border-white rounded-xl hover:bg-slate-50/5 active:bg-slate-50/10">{menuLinks.install}</a>
         </li>
       </ul>
       <div className={`${isVisible ? '' : 'hidden'} fixed inset-0 z-50 overflow-hidden sm:hidden`}>

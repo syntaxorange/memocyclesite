@@ -38,7 +38,7 @@ export default async function Home({ params: { lang } }: Props) {
           <div className="left">
             <div className="main-text text-white relative mb-4 md:mb-8">{dict.main_text}</div>
             <div className="main-text-bottom text-white lg:text-2xl">{dict.main_text_bottom}</div>
-            <a href="#" className="install-btn text-lg font-bold py-4 px-9 inline-block bg-white rounded-xl hover:bg-slate-50 active:bg-slate-100">{dict.menu.install}</a>
+            <a href="https://chromewebstore.google.com/detail/topic-meister/igcookmgmogijokbhikdoggmkidbnhnk" className="install-btn text-lg font-bold py-4 px-9 inline-block bg-white rounded-xl hover:bg-slate-50 active:bg-slate-100">{dict.menu.install}</a>
           </div>
           <div className="hidden md:block">
             <Image
@@ -86,7 +86,7 @@ export default async function Home({ params: { lang } }: Props) {
           </div>
           <p className="max-width-858">{dict.benefits.learning_master}</p>
           <p className="font-bold mb-10" dangerouslySetInnerHTML={{__html: dict.benefits.install}}></p>
-          <a href="#" className="install-btn text-lg font-bold py-4 px-9 inline-block bg-white rounded-xl hover:bg-slate-50 active:bg-slate-100">{dict.menu.install}</a>
+          <a href="https://chromewebstore.google.com/detail/topic-meister/igcookmgmogijokbhikdoggmkidbnhnk" className="install-btn text-lg font-bold py-4 px-9 inline-block bg-white rounded-xl hover:bg-slate-50 active:bg-slate-100">{dict.menu.install}</a>
         </article>
       </div>
       <footer className="footer flex justify-center items-center max-w-screen-xl w-full border-t border-white py-4 md:py-10">
