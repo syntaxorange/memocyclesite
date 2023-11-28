@@ -25,7 +25,7 @@ export default async function Home({ params: { lang } }: Props) {
             src="/logo.png"
             alt="Logo"
             className="dark:invert"
-            width={157}
+            width={128}
             height={27}
             priority
           />
