@@ -8,10 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        purple: '#6e4bbc',
-        'bg-purple-dark': '#5d33bb'
+      keyframes: {
+        flash: {
+          'from, 50%, to': { opacity: '1' },
+          '25%, 75%': { opacity: '0' },
+        }
       },
+      animation: {
+        flash: 'flash 1s both 2',
+      }
     },
   },
   plugins: [],
