@@ -19,20 +19,21 @@ export default async function Home({ params: { lang } }: Props) {
 
   return (
     <main className="max-w-3xl px-4 md:px-0 mx-auto w-full">
-      <header className="header flex items-center justify-between py-2 mb-20">
-        <a href="/" className="flex">
+      <header className="header flex items-center justify-between pt-3 pb-2 mb-20">
+        <a href="/" className="flex items-center">
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             alt="Logo"
-            className="dark:invert"
-            width={128}
-            height={27}
+            className="dark:invert mr-2"
+            width={32}
+            height={32}
             priority
           />
+          <span className="font-semibold">MemoCycle</span>
         </a>
         <Button className="flex items-center" url="https://destream.net/live/syntaxorange/donate" blank="true">
           <span className="material-icons-outlined !text-lg mr-1.5">coffee</span> 
-          <span className="text-sm">{dict.button.donate}</span>
+          <span className="text-sm font-medium">{dict.button.donate}</span>
         </Button>
       </header>
       <div className="flex flex-col main-text mx-auto mb-9 text-center max-w-[592px]">
@@ -59,7 +60,15 @@ export default async function Home({ params: { lang } }: Props) {
             priority
           />
         </div>
-        <iframe width="100%" height="314" className="mx-auto mb-9 max-w-[560px]" src="https://www.youtube.com/embed/Lr-6NxNAQQc?si=G-m1qbjF1t6je5BH" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        <Image
+          src="/mainimage.png"
+          alt="MemoCycle"
+          className="mx-auto mb-9 w-full max-w-[560px] rounded-md"
+          width={560}
+          height={314}
+          priority
+        />
+        {/* <iframe width="100%" height="314" className="mx-auto mb-9 max-w-[560px]" src="https://www.youtube.com/embed/Lr-6NxNAQQc?si=G-m1qbjF1t6je5BH" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
       </section>
       <section className="mb-9">
         <h2 className="font-medium text-2xl mb-6">FAQ</h2>
@@ -67,7 +76,7 @@ export default async function Home({ params: { lang } }: Props) {
       </section>
       <footer className="text-sm text-gray-600 pb-2">
         <p>Contact: <a href="mailto:syntaxorange@gmail.com">syntaxorange@gmail.com</a></p>
-        <p>Copyright © {year} Topic Meister</p>
+        <p>Copyright © {year} MemoCycle</p>
       </footer>
     </main>
   )

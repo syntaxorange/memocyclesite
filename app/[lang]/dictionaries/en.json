@@ -1,13 +1,13 @@
 {
-  "title": "Topic Meister - study<br> assistant",
-  "description": "Topic Meister is a free Chrome extension that allows you to keep important information in view across all open browser tabs, enabling more effective memorization</br>through regular repetition.",
+  "title": "MemoCycle - study<br> assistant",
+  "description": "MemoCycle is a free Chrome extension that allows you to keep important information in view across all open browser tabs, enabling more effective memorization</br>through regular repetition.",
   "button": {
     "install": "Add to Chrome",
     "donate": "Treat coffee"
   },
   "browserlistTitle": "Available on the Chrome Store for:",
   "faq": [
-    { "id": 1, "title": "What is Topic Meister?", "description": "Topic Meister is an educational extension that focuses on the essentials: not just on understanding key information, but also on its long-term retention. This long-term effect is achieved through systematic repetition. Topic Meister streamlines the process, making it more convenient and enjoyable. The added concepts are displayed across all open browser tabs and change synchronously based on a timer, allowing you to have important information for memorization always at your fingertips." },
+    { "id": 1, "title": "What is MemoCycle?", "description": "MemoCycle is an educational extension that focuses on the essentials: not just on understanding key information, but also on its long-term retention. This long-term effect is achieved through systematic repetition. MemoCycle streamlines the process, making it more convenient and enjoyable. The added concepts are displayed across all open browser tabs and change synchronously based on a timer, allowing you to have important information for memorization always at your fingertips." },
     { "id": 2, "title": "Is the extension free?", "description": "Indeed, the extension can be used entirely for free. If you find it helpful, you can make a donation to the developer" },
     { "id": 3, "title": "Where is the added text stored?", "description": "The added text from the page is saved in the extension's local storage (Storage API) without any time limitations. The storage can only be cleared through a complete manual reinstallation of the extension." },
     { "id": 4, "title": "Why is there no integration with Google Sheets?", "description": "At the moment, Google Extensions does not support API integration with Google Sheets. Instead, it utilizes CSV import/export functionality. If needed, the CSV output file can be manually saved to Google Drive or another convenient cloud storage service." },

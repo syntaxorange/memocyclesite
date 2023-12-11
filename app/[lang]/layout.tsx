@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Topic Meister',
-  description: 'Topic Meister - Chrome Extension for study',
+  title: 'MemoCycle',
+  description: 'MemoCycle - Chrome Extension for study',
 }
 
 export default function RootLayout({
